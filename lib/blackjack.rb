@@ -45,6 +45,7 @@ def hit?(number)
         result = number
       elsif
         invalid_command
+        prompt_user
         result = number
  end
  result
