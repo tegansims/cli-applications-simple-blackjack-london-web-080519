@@ -60,9 +60,10 @@ end
 
 def runner
   welcome
-  card_total = initial_round #assign the card total to the initial_round
-  while card_total < 21 #whilst less than 21
-    card_total = hit?(card_total) #continue reassignign card total to hit
+  running_total = initial_round #assign the card total to the initial_round
+  while running_total < 21 #whilst less than 21
+    running_total = hit?(running_total) #continue reassignign card total to hit
+    display_card_total(running_total)
   end
- end_game(card_total)
+ end_game(running_total)
 end
