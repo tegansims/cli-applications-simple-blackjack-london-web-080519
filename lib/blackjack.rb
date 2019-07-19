@@ -39,7 +39,7 @@ def hit?(number)
       elsif reply == 'h'
         new_hand = deal_card  
         new_total = number + new_hand
-        puts "Your new card is #{new_hand}. "
+      #  puts "Your new card is #{new_hand}. "
       #  puts "Your new total is #{new_total}"
         number = new_total
         result = number
